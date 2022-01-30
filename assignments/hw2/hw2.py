@@ -1,8 +1,8 @@
 """
-Name: <your name goes here – first and last>
+Name: Margaret Kimery
 <ProgramName>.py
-
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
+file: hw2.py
+Problem: <Brief, one or two sentence descriptioves, in your own words.>
 
 Certification of Authenticity:
 <include one of the following>
@@ -13,24 +13,39 @@ import math
 
 
 def sum_of_threes():
-    pass
-
+    user_input = eval(input("what is the upper bound?"))
+    number = user_input // 3
+    sum = 3 * (number * (number + 1) // 2)
+    print("sum of threes is," + sum)
 
 def multiplication_table():
-    pass
+    for i in range(1, 11):
+        print(str(1 * i) + " " + str(2 * i) + " " + str(3 * i) + " " + str(4 * i) + " " + str(5 * i) + " " + str(6 * i) + " " + str(7 * i) + " " + str(8 + i) + " " + str(9 + i) + " " + str(10 + i))
 
 
 def triangle_area():
-    pass
-
+    length_a = eval(input("Enter side a length: "))
+    length_b = eval(input("Enter side b length: "))
+    length_c = eval(input("Enter side c length: "))
+    s = (length_a + length_b + length_c) / 2
+    a = (s(s - length_a)(s - length_b)(s - length_c))**0.5
+    print("area is," + a)
 
 def sum_squares():
-    pass
-
+    lower_range = eval(input("Enter lower range: "))
+    upper_range = eval(input("Enter upper range: "))
+    answer = 0
+    for i in range(lower_range, upper_range + 1):
+        answer = answer + (i * i)
+    print(answer)
 
 def power():
-    pass
-
+    base = eval(input("Enter base: "))
+    exponent = eval(input("Enter exponent: "))
+    answer = 1
+    for i in range(exponent):
+        answer = answer * base
+    print(answer)
 
 if __name__ == '__main__':
     pass
