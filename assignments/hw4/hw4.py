@@ -9,7 +9,7 @@ I certify that this assignment is entirely my own work.
 """
 import math
 from graphics import *
-
+from math import *
 
 def squares():
     win = GraphWin("Square", 500, 500)
