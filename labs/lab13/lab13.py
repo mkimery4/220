@@ -13,10 +13,10 @@ def trade_alert(filename):
         trade_volume = trade.split()
         for trade in trade_volume:
             counter = counter + 1
-            if trade_volume > 830:
+            if int(trade) > 830:
                 print("ALERT! TRADE VOLUME IS AT 830!")
                 print(counter, " seconds")
-            if trade_volume == 500:
+            if int(trade) == 500:
                 print("ALERT! TRADE VOLUME IS AT 500!")
                 print(counter, " seconds")
             else:
